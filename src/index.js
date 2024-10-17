@@ -1,3 +1,4 @@
+// src/index.js
 function press(value) {
     document.getElementById("display").value += value;
 }
