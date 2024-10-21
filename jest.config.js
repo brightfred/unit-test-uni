@@ -1,4 +1,4 @@
 module.exports = {
-    testEnvironment: 'node',
-    roots: ['<rootDir>/__test__']
+    testEnvironment: 'jest-environment-jsdom',
+    roots: ['<rootDir>/__test2__'],
 };
