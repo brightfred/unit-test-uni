@@ -1,0 +1,148 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #2a9d8f;
+    outline: none;
+}
+
+/* Button styles */
+button {
+    padding: 12px;
+    border: none;
+    background-color: #2a9d8f;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #21867a;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Filter container styling */
+.filter-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-container button {
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+/* Book list styling */
+#book-list {
+    list-style: none;
+    padding: 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.book-item:hover {
+    background-color: #e9f5f2;
+}
+
+.book-item .unread {
+    font-weight: bold;
+    color: #333;
+}
+
+.book-item .read {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Scrollbar styling for the book list */
+#book-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#book-list::-webkit-scrollbar-thumb {
+    background-color: #2a9d8f;
+    border-radius: 10px;
+}
+
+#book-list::-webkit-scrollbar-track {
+    background-color: #f4f7fc;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
